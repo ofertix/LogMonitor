@@ -1,0 +1,42 @@
+upstreamerrors: # custom name (you can use what you want)
+  file: 'test/error.log' # path to file that will be parsed and monitored
+  parser: LogMonitor\Parsers\NginxErrorParser # class name in charge of parse file
+  actors: # list of actor classes that receive parsed data and do actions defined in the class code
+    - LogMonitor\Actors\Errors\ErrorPhpActor
+    - LogMonitor\Actors\Errors\ErrorSqlActor
+    - LogMonitor\Actors\Errors\ErrorSymfonyActor
+  actor_config: # config parameters passed to actor classes
+    name: '[test] error.log'
+    publishers:
+      publisher_1:
+        class: \LogMonitor\Publishers\RabbitMQ
+        config:
+          host: localhost
+          port: 5672
+          user: guest
+          pass: guest
+          vhost: /
+          exchange: myproject_errors
+#      publisher_2:
+#        class: \LogMonitor\Publishers\ZeroMQ
+#        config:
+#          socket: 'epgm://eth0;224.1.1.1:5556'
+
+access: # custom name (you can use what you want)
+  file: 'test/access.log' # path to file that will be parsed and monitored
+  parser: LogMonitor\Parsers\NginxErrorParser # class name in charge of parse file
+  actors: # list of actor classes that receive parsed data and do actions defined in the class code
+    - LogMonitor\Actors\Stats\AccessStatsActor
+  actor_config: # config parameters passed to actor classes
+    name: '[test] access.log'
+    publishers:
+      publisher_1:
+        class: \LogMonitor\Publishers\RabbitMQ
+        config:
+          host: localhost
+          port: 5672
+          user: guest
+          pass: guest
+          vhost: /
+          exchange: myproject_errors
+

@@ -1,0 +1,41 @@
+Dec 09 13:38:02.804171 [WARNING] [pool produccio] child 29465 said into stderr: "Rendering (2/2)                                                    "
+Dec 09 13:38:02.804220 [WARNING] [pool produccio] child 29465 said into stderr: "[>                                                        "
+"ec 09 13:38:02.804264 [WARNING] [pool produccio] child 29465 said into stderr: "   ] 0%
+Dec 09 13:38:02.804378 [WARNING] [pool produccio] child 29465 said into stderr: "[===============>        "
+"ec 09 13:38:02.804424 [WARNING] [pool produccio] child 29465 said into stderr: "                                    ] 25%
+Done         "2.845165 [WARNING] [pool produccio] child 29465 said into stderr: "[============================================================] 100%
+Dec 09 13:38:02.845240 [WARNING] [pool produccio] child 29465 said into stderr: "                                                      "
+Dec 09 13:39:50.905724 [NOTICE] Reloading in progress ...
+Dec 09 13:39:50.986524 [NOTICE] reloading: execvp("php-fpm", {"php-fpm"})
+Dec 09 13:39:52.416954 [NOTICE] using inherited socket fd=6, "0.0.0.0:9000"
+Dec 09 13:39:52.416954 [NOTICE] using inherited socket fd=6, "0.0.0.0:9000"
+Dec 09 13:39:52.417018 [NOTICE] using inherited socket fd=7, "0.0.0.0:9002"
+Dec 09 13:39:52.417018 [NOTICE] using inherited socket fd=7, "0.0.0.0:9002"
+Dec 09 13:39:52.417051 [NOTICE] using inherited socket fd=8, "0.0.0.0:9001"
+Dec 09 13:39:52.417051 [NOTICE] using inherited socket fd=8, "0.0.0.0:9001"
+Dec 09 13:39:52.417747 [NOTICE] fpm is running, pid 31565
+Dec 09 13:39:52.431412 [NOTICE] ready to handle connections
+Dec 09 13:39:56.434965 [WARNING] [pool produccio] seems busy (you may need to increase start_servers, or min/max_spare_servers), spawning 8 children, there are 4 idle, and 12 total children
+Dec 09 13:40:26.119101 [WARNING] [pool produccio] seems busy (you may need to increase start_servers, or min/max_spare_servers), spawning 8 children, there are 3 idle, and 23 total children
+Dec 09 13:41:04.181611 [NOTICE] Reloading in progress ...
+Dec 09 13:41:04.264260 [NOTICE] reloading: execvp("php-fpm", {"php-fpm"})
+Dec 09 13:41:04.393030 [NOTICE] using inherited socket fd=6, "0.0.0.0:9000"
+Dec 09 13:41:04.393030 [NOTICE] using inherited socket fd=6, "0.0.0.0:9000"
+Dec 09 13:41:04.393088 [NOTICE] using inherited socket fd=7, "0.0.0.0:9002"
+Dec 09 13:41:04.393088 [NOTICE] using inherited socket fd=7, "0.0.0.0:9002"
+Dec 09 13:41:04.393101 [NOTICE] using inherited socket fd=8, "0.0.0.0:9001"
+Dec 09 13:41:04.393101 [NOTICE] using inherited socket fd=8, "0.0.0.0:9001"
+Dec 09 13:41:04.393343 [NOTICE] fpm is running, pid 32040
+Dec 09 13:41:04.407643 [NOTICE] ready to handle connections
+Dec 09 13:41:08.411435 [WARNING] [pool produccio] seems busy (you may need to increase start_servers, or min/max_spare_servers), spawning 8 children, there are 0 idle, and 9 total children
+Dec 09 13:41:09.719405 [WARNING] [pool produccio] seems busy (you may need to increase start_servers, or min/max_spare_servers), spawning 16 children, there are 1 idle, and 14 total children
+Dec 09 13:50:56.602327 [NOTICE] Reloading in progress ...
+Dec 09 13:50:56.658045 [NOTICE] reloading: execvp("php-fpm", {"php-fpm"})
+Dec 09 13:50:56.795632 [NOTICE] using inherited socket fd=6, "0.0.0.0:9000"
+Dec 09 13:50:56.795632 [NOTICE] using inherited socket fd=6, "0.0.0.0:9000"
+Dec 09 13:50:56.795716 [NOTICE] using inherited socket fd=7, "0.0.0.0:9002"
+Dec 09 13:50:56.795716 [NOTICE] using inherited socket fd=7, "0.0.0.0:9002"
+Dec 09 13:50:56.795738 [NOTICE] using inherited socket fd=8, "0.0.0.0:9001"
+Dec 09 13:50:56.795738 [NOTICE] using inherited socket fd=8, "0.0.0.0:9001"
+Dec 09 13:50:56.796039 [NOTICE] fpm is running, pid 633
+Dec 09 13:50:56.811512 [NOTICE] ready to handle connections

@@ -1,0 +1,16 @@
+log1:
+  file: 'test.dat'
+  parser: LogSpy\Parsers\SampleParser
+  actors:
+    - LogSpy\Actors\SampleActor
+  actor_config:
+    test_echo: 'abc'
+
+log2:
+  file: 'test2.dat'
+  parser: LogSpy\Parsers\SampleParser
+  actors:
+    - LogSpy\Actors\SampleActor
+  actor_config:
+    test_echo: '123'
+

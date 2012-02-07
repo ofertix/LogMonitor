@@ -1,0 +1,17 @@
+upstream: # custom name (you can use what you want)
+  file: 'test/upstream.log' # path to file that will be parsed and monitored
+  parser: LogMonitor\Parsers\NginxUpstreamParser # class name in charge of parse file
+  actors: # list of actor classes that receive parsed data and do actions defined in the class code
+    - LogMonitor\Actors\Stats\RequestTimeStatsActor
+  actor_config: # config parameters passed to actor classes
+    name: '[test] upstream.log'
+    publishers:
+      publisher_1:
+        class: \LogMonitor\Publishers\RabbitMQ
+        config:
+          host: localhost
+          port: 5672
+          user: guest
+          pass: guest
+          vhost: /
+          exchange: myproject_stats

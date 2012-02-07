@@ -1,0 +1,17 @@
+phpfpm_error: # custom name (you can use what you want)
+  file: 'test/php-fpm_error.log' # path to file that will be parsed and monitored
+  parser: LogMonitor\Parsers\PhpFpmParser # class name in charge of parse file
+  actors: # list of actor classes that receive parsed data and do actions defined in the class code
+    - LogMonitor\Actors\Errors\PhpFpmActor
+  actor_config: # config parameters passed to actor classes
+    name: '[test] php-fpm_error.log'
+    publishers:
+      publisher_1:
+        class: \LogMonitor\Publishers\RabbitMQ
+        config:
+          host: localhost
+          port: 5672
+          user: guest
+          pass: guest
+          vhost: /
+          exchange: myproject_errors
