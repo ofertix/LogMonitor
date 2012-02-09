@@ -71,9 +71,6 @@ class LogSpyApp extends \Pimple
                     break;
             }
         }
-
-        // if manual config
-        if (!empty($config)) $this->kernel->addConfig('config_1', $config);
     }
 
     /**

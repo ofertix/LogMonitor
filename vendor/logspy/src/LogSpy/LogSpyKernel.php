@@ -48,7 +48,6 @@ class LogSpyKernel
         $this->checkConfig($config);
 
         $this->configs[$name] = $config;
-        $this->configs[$name]['fileStat'] = $this->configs[$name]['file'] . '.sdf';
         $this->configs[$name]['parserObj'] = new $this->configs[$name]['parser']();
         foreach ($this->configs[$name]['actors'] as $actor)
         {
@@ -95,7 +94,7 @@ class LogSpyKernel
     {
         foreach ($this->configs as $name => $config)
         {
-            $this->saveStatus($config['file'], $config['fileStat']);
+            $this->saveStatus($config['file'], $config['file_stat']);
         }
     }
 
@@ -150,7 +149,7 @@ class LogSpyKernel
     protected function openFile($name, $config)
     {
         $file = $config['file'];
-        $fileStat = $config['fileStat'];
+        $fileStat = $config['file_stat'];
 
         $seekPos = 0; // Position to start reading.
         // Some protections. FIXME: We should move this to fileFormat

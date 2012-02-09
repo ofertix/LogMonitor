@@ -1,5 +1,6 @@
 phpfpm_error: # custom name (you can use what you want)
   file: 'test/php-fpm_error.log' # path to file that will be parsed and monitored
+  file_stat: 'test/php-fpm_error.log.sdf' # path where to write position data from monitored file
   parser: LogMonitor\Parsers\PhpFpmParser # class name in charge of parse file
   actors: # list of actor classes that receive parsed data and do actions defined in the class code
     - LogMonitor\Actors\Errors\PhpFpmActor

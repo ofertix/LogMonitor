@@ -57,6 +57,9 @@ Config file is structured in one or more sections named as you want. Every secti
 - file:
 	- path to file that will be parsed and monitored.
 
+- file_stat:
+	- path where to write position data from monitored file.
+
 - parser:
 	- class name in charge of parsing the file.
 
