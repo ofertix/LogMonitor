@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the parser package.
+ * This file is part of the LogMonitor package.
  *
  * (c) Joan Valduvieco <joan.valduvieco@ofertix.com>
  * (c) Jordi Llonch <jordi.llonch@ofertix.com>
