@@ -75,4 +75,6 @@ See config file for more details and examples.
 Extra notes
 ===========
 
+We detect if a monitored file is rotated using "atime" parameter from stats. You must mount your file system using "noatime" parameter in /etc/fstab.
+
 Use of ZMQ is discontinued because a memory leak using ZMQ with OpenPGM PUB/SUB.
