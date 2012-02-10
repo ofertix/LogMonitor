@@ -160,12 +160,9 @@ class LogSpyKernel
         if (file_exists($fileStat)) {
             $statDataLast = json_decode(file_get_contents($fileStat), true);
 
-            if ($statDataLast['size'] != $statDataCurrent['size'] OR $statDataLast['atime'] != $statDataCurrent['atime']) {
-                if ($statDataLast['size'] > $statDataCurrent['size']) {
-                    $seekPos = 0; // Reread from the begining. Probably the file has been rotated.
-                }
-            } else
-            {
+            if ($statDataLast['atime'] != $statDataCurrent['atime']) {
+                $seekPos = 0; // Reread from the begining. Probably the file has been rotated.
+            } else {
                 $seekPos = $statDataLast['size'];
             }
         }
