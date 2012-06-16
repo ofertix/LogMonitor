@@ -9,7 +9,7 @@ Files are parsed using `tail -f` command. Every line is sent to the configured c
 Requirements
 ============
 
-- PHP 5.3.2 and up.
+- PHP 5.3.2 and up with pcntl extension installed.
 - RabbitMQ or ZMQ.
 - tail
 
