@@ -31,9 +31,9 @@ Installation
 
 The best way to install is to clone the repository and then configure as you need. See "Configuration" section.
 
-After cloning you must update vendors:
+After cloning you must install dependencies using "composer":
 
-	./update_vendors.sh
+	php composer.phar update
  
 
 Usage

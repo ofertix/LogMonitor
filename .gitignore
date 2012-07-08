@@ -1,3 +1,6 @@
 .idea
 .DS_Store
 test/*.sdf
+composer.lock
+vendor/*
+!vendor/logspy

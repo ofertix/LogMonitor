@@ -17,12 +17,15 @@
 // rm -f test/*.sdf; php app/log_monitor.php -c app/config/test_phpfpm_error_log.yml
 // rm -f test/*.sdf; php app/log_monitor.php -c app/config/test_upstream_log.yml
 
-require __DIR__ . '/../vendor/logspy/logspy.php';
+require __DIR__ . '/../vendor/autoload.php';
+
+use LogSpy\LogSpyApp;
+
+$app = new LogSpyApp();
 
 // register my classes
 $app['autoloader']->registerNamespaces(array(
     'LogMonitor' => __DIR__ . "/../src/",
-    'PhpAmqpLib' => __DIR__ . '/../vendor/php-amqplib/',
 ));
 $app['autoloader']->register();
 

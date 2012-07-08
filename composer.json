@@ -1,0 +1,31 @@
+{
+    "name": "ofertix/log-monitor",
+    "description": "LogMonitor is a component in charge of parse all kind of log files and publishes errors and stats to the configured channel.",
+    "keywords": ["logmonitor","log","logging","monitoring","monitor"],
+    "homepage": "https://github.com/ofertix/LogMonitor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joan Valduvieco",
+            "email": "joan.valduvieco@ofertix.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Jordi Llonch",
+            "email": "jordi.llonch@ofertix.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "LogSpy": "vendor/logspy/src"
+        }
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "videlalvaro/php-amqplib": "dev-master",
+        "pimple/pimple": "1.0.0",
+        "symfony/class-loader": "2.0.x",
+        "symfony/yaml": "2.0.x"
+    }
+}

@@ -10,10 +10,7 @@
  * file that was distributed with this source code.
  */
 
-require __DIR__ . '/../vendor/logspy/autoload.php';
-$loader->registerNamespaces(array(
-    'PhpAmqpLib' => __DIR__ . '/../vendor/php-amqplib/',
-));
+require __DIR__ . '/../vendor/autoload.php';
 
 use PhpAmqpLib\Connection\AMQPConnection;
 use PhpAmqpLib\Message\AMQPMessage;

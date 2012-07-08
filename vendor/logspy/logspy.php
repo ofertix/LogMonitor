@@ -13,7 +13,7 @@
 // example:
 // rm -f test/test.dat.sdf; php logspy.php -f test/test.dat -p \\LogSpy\\Parsers\\SampleParser -a \\LogSpy\\Actors\\SampleActor
 
-require __DIR__ . '/autoload.php';
+require __DIR__ . '/../autoload.php';
 
 use LogSpy\LogSpyApp;
 
